@@ -26,7 +26,7 @@ public class Utility {
 	public static String readDataFromPropertiesFile(String key) throws IOException {
 		Properties properties = new Properties();
 		FileInputStream myFile = new FileInputStream(
-				"C:\\Users\\shilp\\Desktop\\clone project\\31May25SoftwareTesting\\src\\main\\resources\\config\\config.properties");
+				"C:\\Users\\Dell\\Desktop\\TestingProject\\Coverfox_Insurance\\src\\main\\resources\\config\\config.properties");
 		properties.load(myFile);
 		String value = properties.getProperty(key);
 		System.out.println("reading " + key + "value is " + value);

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+<testng-results ignored="0" total="4" passed="2" failed="2" skipped="0">
   <reporter-output>
     <line>
       <![CDATA[Actual result is 48]]>
@@ -10,27 +10,33 @@
     <line>
       <![CDATA[closing browser]]>
     </line>
+    <line>
+      <![CDATA[closing browser]]>
+    </line>
+    <line>
+      <![CDATA[closing browser]]>
+    </line>
   </reporter-output>
-  <suite started-at="2025-11-07T14:27:18 IST" name="Suite" finished-at="2025-11-07T14:28:15 IST" duration-ms="57033">
+  <suite started-at="2025-11-13T23:54:16 IST" name="Default suite" finished-at="2025-11-13T23:56:03 IST" duration-ms="107842">
     <groups>
       <group name="cucumber">
         <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.CoverfoxRunnerClass@23348b5d]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test started-at="2025-11-07T14:27:18 IST" name="Test" finished-at="2025-11-07T14:28:15 IST" duration-ms="57033">
+    <test started-at="2025-11-13T23:54:16 IST" name="Default test" finished-at="2025-11-13T23:56:03 IST" duration-ms="107842">
       <class name="runner.CoverfoxRunnerClass">
-        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:runner.CoverfoxRunnerClass@23348b5d]" started-at="2025-11-07T14:27:18 IST" name="setUpClass" finished-at="2025-11-07T14:27:19 IST" duration-ms="923" status="PASS">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:runner.CoverfoxRunnerClass@23348b5d]" started-at="2025-11-13T23:54:16 IST" name="setUpClass" finished-at="2025-11-13T23:54:17 IST" duration-ms="1305" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@127705e4]]>
+                <![CDATA[org.testng.TestRunner@6088451e]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.CoverfoxRunnerClass@23348b5d]" started-at="2025-11-07T14:27:19 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-11-07T14:27:49 IST" duration-ms="30161" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.CoverfoxRunnerClass@23348b5d]" started-at="2025-11-13T23:54:17 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-11-13T23:54:52 IST" duration-ms="34755" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -52,11 +58,75 @@
             </line>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.CoverfoxRunnerClass@23348b5d]" started-at="2025-11-07T14:27:49 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-11-07T14:28:12 IST" duration-ms="23440" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.CoverfoxRunnerClass@23348b5d]" started-at="2025-11-13T23:54:52 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-11-13T23:55:06 IST" duration-ms="14351" status="FAIL">
           <params>
             <param index="0">
               <value>
                 <![CDATA["TC02: Validate CoverFox address details page error messages"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["CoverFox Health Insurance Test"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.NoSuchWindowException">
+            <message>
+              <![CDATA[no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=142.0.7444.135)
+Build info: version: '4.36.0', revision: '6d115cfd87'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.8'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [8a5d127c1f562fe711acd682c61b4b3b, findElement {value=//*[text()='Female'], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 142.0.7444.135, chrome: {chromedriverVersion: 142.0.7444.162 (c076baf266c..., userDataDir: C:\Users\Dell\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50383}, goog:processID: 5332, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50383/devtoo..., se:cdpVersion: 142.0.7444.135, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 8a5d127c1f562fe711acd682c61b4b3b]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=142.0.7444.135)
+Build info: version: '4.36.0', revision: '6d115cfd87'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.8'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [8a5d127c1f562fe711acd682c61b4b3b, findElement {value=//*[text()='Female'], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 142.0.7444.135, chrome: {chromedriverVersion: 142.0.7444.162 (c076baf266c..., userDataDir: C:\Users\Dell\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50383}, goog:processID: 5332, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50383/devtoo..., se:cdpVersion: 142.0.7444.135, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 8a5d127c1f562fe711acd682c61b4b3b
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:557)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:380)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:374)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at jdk.proxy2/jdk.proxy2.$Proxy24.click(Unknown Source)
+at com.coverFox.Pages.CoverFoxHomePage.clickOnFemaleOption(CoverFoxHomePage.java:21)
+at stepDefinitions.CoverFoxHealthInsurance.i_click_on_get_started_button(CoverFoxHealthInsurance.java:38)
+at ✽.I click on get started button(file:///C:/Users/Dell/Desktop/TestingProject/Coverfox_Insurance/src/test/resources/coverFoxFeatures/coverFoxHealthInsurance.feature:12)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchWindowException -->
+          <reporter-output>
+            <line>
+              <![CDATA[closing browser]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.CoverfoxRunnerClass@23348b5d]" started-at="2025-11-13T23:55:06 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-11-13T23:55:39 IST" duration-ms="32713" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["TC03 Validate payment"]]>
               </value>
             </param>
             <param index="1">
@@ -71,11 +141,56 @@
             </line>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:runner.CoverfoxRunnerClass@23348b5d]" started-at="2025-11-07T14:28:12 IST" name="tearDownClass" finished-at="2025-11-07T14:28:15 IST" duration-ms="2432" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.CoverfoxRunnerClass@23348b5d]" started-at="2025-11-13T23:55:39 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-11-13T23:56:00 IST" duration-ms="21069" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["TC03 Validate payment"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["CoverFox Health Insurance Test"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="io.cucumber.testng.UndefinedStepException">
+            <message>
+              <![CDATA[The step 'I am on home page3' is undefined.
+You can implement this step using the snippet(s) below:
+
+@Given("I am on home page3")
+public void i_am_on_home_page3() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[io.cucumber.testng.UndefinedStepException: The step 'I am on home page3' is undefined.
+You can implement this step using the snippet(s) below:
+
+@Given("I am on home page3")
+public void i_am_on_home_page3() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+at ✽.I am on home page3(file:///C:/Users/Dell/Desktop/TestingProject/Coverfox_Insurance/src/test/resources/coverFoxFeatures/coverFoxHealthInsurance.feature:27)
+]]>
+            </full-stacktrace>
+          </exception> <!-- io.cucumber.testng.UndefinedStepException -->
+          <reporter-output>
+            <line>
+              <![CDATA[closing browser]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:runner.CoverfoxRunnerClass@23348b5d]" started-at="2025-11-13T23:56:00 IST" name="tearDownClass" finished-at="2025-11-13T23:56:03 IST" duration-ms="3537" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->
       </class> <!-- runner.CoverfoxRunnerClass -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

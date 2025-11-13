@@ -31,6 +31,11 @@ public class CoverFoxHealthInsurance {
 	public void i_am_on_home_page1() {
 	    System.out.println("I am on home page1");
 	}
+	@Given("I am on home page3")
+	public void i_am_on_home_page3() {
+	    // Write code here that turns the phrase above into concrete actions
+		  System.out.println("I am on home page3");
+	}
 	@When("I click on get started button")
 	public void i_click_on_get_started_button() throws InterruptedException {
 		Thread.sleep(4000);
