@@ -23,7 +23,7 @@ And I provide age as "24" and click on next button
 And I click on continue button
 Then Validate error messages
 
-Scenario: TC03 Validate payment
+Scenario: TC04 Validate payment
 Given I am on home page3
 When I click on get started button
 And I click on next button
