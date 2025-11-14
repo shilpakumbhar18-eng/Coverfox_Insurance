@@ -5,7 +5,7 @@ import io.cucumber.testng.CucumberOptions;
 
 @CucumberOptions(
 		features= {
-				"C:\\Users\\shilp\\Desktop\\clone project\\31May25SoftwareTesting\\src\\test\\resources\\coverFoxFeatures\\coverFoxHealthInsurance.feature"
+				"C:\\Users\\Admin\\Desktop\\testing\\Coverfox_Insurance\\src\\test\\resources\\coverFoxFeatures\\coverFoxHealthInsurance.feature"
 		}
 		,glue= {"stepDefinitions", "hooks"}, 
 				plugin={"pretty","html:target/CucumberReports/reports.html"}, 
